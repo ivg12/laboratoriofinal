@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Registro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form method="POST" action="formulario.php">
+        <fieldset>
+            <h2>Registro de usuarios</h2>
+
+            <label for="nombre">Nombre:</label>
+            <input type="text" name="NOMBRE" required />
+
+            <label for="apellido1">Primer apellido:</label>
+            <input type="text" name="PRIMER_APELLIDO" required />
+
+            <label for="apellido2">Segundo apellido:</label>
+            <input type="text" name="SEGUNDO_APELLIDO" required />
+
+            <label for="email">Email:</label>
+            <input type="email" name="EMAIL" required />
+
+            <label for="login">Login:</label>
+            <input type="text" name="LOGIN" required />
+
+            <label for="password">Password:</label>
+            <input type="password" name="PASSWORD" required minlength="4" maxlength="8" />
+
+            <input type="submit" value="Enviar" />
+        </fieldset>
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>
